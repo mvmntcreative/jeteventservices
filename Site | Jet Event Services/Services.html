@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<title>Ilijah's Site</title>
+
+
+
+</head>
+<style>
+    @font-face {
+        font-family: Pacifica; src: url("fonts/pacificaconreg.ttf");
+    }
+    @font-face {
+        font-family: Dinlight; src: url("fonts/dinlight.ttf");
+    }
+    
+    body{
+        margin: 0 0 0 0;
+        overflow: hidden;
+    }
+    
+    #services-page{
+    margin: 0 0 0 0;
+    max-width: 1vw;
+    }
+    
+    
+    .logo{
+        position:absolute;
+        left: 5%;
+        top: 0;
+        right: 0;
+        margin: 50px 0 0 0;
+        z-index: 10;
+        width: 300px;
+        height: auto;
+    }
+    
+    
+    .container-tagline{
+        position: absolute;
+        left: 25%;
+        right: 0;
+        top: 60%;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    
+    }
+      
+            
+  
+       
+    .vectormain{
+        position: absolute;
+        left: 0%;
+        top: 20%;
+        z-index: 100;
+        -ms-transform: rotate(20deg); /* IE 9 */
+        -webkit-transform: rotate(20deg); /* Safari */
+        transform: rotate(20deg) scale(.4, 1.8);
+        z-index:20;
+    }
+    
+ 
+     
+    .menu{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    color: black;
+    z-index: 1;
+    height: 100%;
+    margin: 0 0 0 0;
+             
+    }
+    
+
+
+    .menu-list-container{
+        background: none;
+        position: absolute;
+        left: 25%;
+        top: 30%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        font-family: pacifica;
+        color: red;
+        font-weight: ;
+        font-size: 27px;
+        letter-spacing: 1px;
+        line-height: 300%;
+        text-decoration: none;
+        list-style-type: none;
+        
+    }
+    
+        .menu-bg{
+        background: white;
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        height: 100vh;
+        width: 300px;
+        
+    }
+    
+    .menu-list{
+        list-style-type: none;
+    }
+    
+    
+    .menu-link{
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+  
+        .video-service-container{
+        position:absolute;
+        
+        
+        }
+    
+    
+        .service-container {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin: 0 0 0 0;
+        min-width: 100%;
+        min-height: 100%; 
+        width: auto;
+        height: auto;
+        z-index: ;
+        background-color: ;
+
+        }
+
+        .service-overlay{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+            z-index: 1;
+
+        }   
+
+
+        .servicebg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0px 0 0px 0px;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto; 
+            z-index: 0;
+            
+            
+
+
+        }
+  
+    
+     .service-text-container{
+         position: absolute;
+         top: 40%;
+         left: 30%;
+         line-height: .6;
+         z-index: 2;
+         height: 100%;
+         width: 100%;
+        
+    }
+    
+    .service-title{
+        font-family: pacifica;
+        position: relative;
+        top: 0%;
+        color: white;
+        text-decoration: underline;
+        font-size: 40px;
+        background-color: blac;
+    }
+    
+    .service-title-2{
+        font-family: pacifica;
+        position: relative;
+        color: white;
+        font-size: 50px;
+        background-color: black;
+        height: ;
+        width: 60%;
+    }
+    .service-description{
+        position: relative;
+        font-family: dinlight;
+        color:white;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30px;
+        background-color: ;
+        text-shadow: 2px 2px 8px #000000;
+        
+        
+    }
+    
+    #service-stagehands{
+        display: none;
+    }
+    
+    #service-techs{
+        display: none;
+    }
+    
+    #service-drivers{
+        display: none;
+    }
+    
+    #service-pa{
+        display: none;
+    }
+    
+    #service-runners{
+        display: none;
+    }
+    
+    /* end Video hover/click */
+    
+    .service-summary{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: ;
+    }
+    
+    .slice{
+    float: left;       
+    top: 0%;
+    left: 0%;
+    width: 20%;
+    height: 100%;
+    font-size: 70%;
+    font-family: pacifica;
+    color: white;
+    background: black;
+        
+
+    }
+    
+    .service-list{
+        position: relative;
+        top: 80%;
+        left: 10%;
+        z-index: 10;
+      
+    }
+    
+    .service-list-2{
+        position: relative;
+        top: 82%;
+        left: 10%;
+        z-index: 10;
+        
+        
+    }
+    
+    
+    .menubttn{
+        position: fixed;
+        left: 0px;
+        bottom: 35px;
+        z-index: 10;
+        
+        
+        
+    }
+
+    .btn-menu{
+        position: absolute;
+        margin: 0 0 0 0;
+        z-index: 100;
+        font-family: pacifica;
+        color: white;
+        font-weight: ;
+        font-size: 25px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        background-color: black;
+        padding: 5px 20px 5px 20px ;
+        
+    }
+    
+    
+        .lower-nav{
+            margin: 0 0 0 0;
+        position: fixed;
+        bottom: 0px;
+        right: 0;
+        z-index: 10;
+    }
+    
+    
+    ul{
+        margin: 0 0 0 0;
+        height: auto;
+        width: 100%;
+        background-color: #204060;
+        list-style: none;
+        color: white;
+        overflow: hidden;
+        padding: 20px;
+        
+        
+    }
+    
+    li{
+        display: inline;
+        top: 0px;
+        width: auto;
+        text-align: right;
+        padding: 0px 0px 0px 50px;
+        font-family: dinlight;
+        font-weight:600;
+        text-transform: uppercase;
+    }
+    
+    .techbg1{ 
+       
+        
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+              margin: auto;
+        padding: 20px 20px 800px 2200px;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+  
+    }
+    
+     .techbg2{ 
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0 0 0 0;
+            padding: 0px 0px 00px 2300px;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+        z-index: ;
+        display: ;
+         background-size: cover;
+         background-repeat: none;
+    }
+    
+      .techbg3{ 
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            padding: 20px 20px 800px 3900px;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+        z-index: ;
+        display: ;
+    }
+    
+     .techbg4{ 
+        position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            padding: 20px 20px 00px 100px;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+        z-index: ;
+        display: ;
+        
+    }
+    
+    .techbg5{ 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        padding: 20px 20px 200px 2000px;
+        min-height: 100%;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+        z-index: ;
+        display: ;
+        
+    }
+    
+    .service-img-container{
+        overflow: hidden;
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        z-index: ;
+    }
+    
+        .hover-target{
+        width: 60%;
+        height: 10%;
+        z-index: 15;
+        margin: 0 0 0 0;
+        background-color:white;
+        color: white;
+        position: relative;
+        top: 73%;
+        left: -15%;
+        text-align: center;
+        margin: auto;
+        opacity: 0;
+    }
+    
+     .slice-border-stagehands{ 
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20%;
+    height: 100%;
+    font-size: 70%;
+    font-family: pacifica;
+    color: white;
+    background-color: ;
+    border: 1px solid darkgray;
+    z-index: 1;
+         opacity: .5;
+
+    }
+    
+     .slice-border-techs{ 
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    width: 20%;
+    height: 100%;
+    font-size: 70%;
+    font-family: pacifica;
+    color: white;
+    background-color: ;
+    border: 1px solid darkgray;
+    z-index: 1;
+         opacity: .5;
+
+    }
+    
+     .slice-border-drivers{ 
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    width: 20%;
+    height: 100%;
+    font-size: 70%;
+    font-family: pacifica;
+    color: white;
+    background-color: ;
+    border: 1px solid darkgray;
+    z-index: 1;
+         opacity: .5;
+
+    }
+    
+     .slice-border-pa{ 
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    width: 20%;
+    height: 100%;
+    font-size: 70%;
+    font-family: pacifica;
+    color: white;
+    background-color: ;
+    border: 1px solid darkgray;
+    z-index: 1;
+         opacity: .5;
+
+    }
+    
+     .slice-border-runners{ 
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    width: 20%;
+    height: 100%;
+    font-size: 70%;
+    font-family: pacifica;
+    color: white;
+    background-color: ;
+    border: 1px solid darkgray;
+    z-index: ;
+         opacity: .5;
+
+    }
+    
+     a{
+            color: white;
+            text-decoration: none;
+        }
+    
+    .service-global-overlay{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 2000px;
+        height: 100%;
+        z-index: 1;
+        background-color: darkre;
+        color: white;
+        opacity: .4;
+    }
+    
+    @media screen and (max-width: 1200px) { 
+    
+        .lower-nav{
+            margin: 0 0 0 0;
+        position: fixed;
+        bottom: 0px;
+        right: 0;
+        z-index: 10;
+    }
+    
+    
+    ul{
+        margin: 0 0 0 0;
+        height: auto;
+        width: 100%;
+        background-color: #204060;
+        list-style: none;
+        color: white;
+        overflow: hidden;
+        padding: 20px;
+        
+        
+    }
+    
+    li{
+        display: inline;
+        top: 0px;
+        width: auto;
+        text-align: right;
+        padding: 0px 0px 0px 20px;
+        font-family: dinlight;
+        font-weight:600;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        
+
+    
+    
+</style>
+    
+    
+    
+<body> 
+    
+    <div id="services-page" background="images/bgimage.jpg">
+        
+        <div>
+            
+        <img class="logo" src="images/jetlogonew.png" alt="jetlogo:">
+            
+        <div class="menubttn">
+	       <a href="#" class="btn-menu">
+				<span class="btn-menu-open">MENU</span>
+				<span class="btn-menu-close"><i></i></span>
+	       </a>
+        </div>
+        </div>
+      
+        <div class="lower-nav">
+            <ul>
+            <div class="nav">
+            <li id="li-stagehands"><a href="#">Stagehands</a></li>
+            <li id="li-techs"><a href="#">Technicians</a></li>
+            <li id="li-drivers"><a href="#">Drivers</a></li>
+            <li id="li-pa"><a href="#">Production Assistants</a></li>
+            <li id="li-runners"><a href="#">Runners</a></li>
+            </div>
+            </ul>
+            
+        </div>
+        
+        <div class="slice-border-stagehands">hello</div>
+        <div class="slice-border-techs">hello</div>
+        <div class="slice-border-drivers">hello</div>
+        <div class="slice-border-pa">hello</div>
+        <div class="slice-border-runners">hello</div>
+        
+        <div class="service-summary">
+            <div class="service-global-overlay">hellohello hello</div>
+      
+        <div id="stagehand-slice" class="slice" style="background-color:darkred;">  
+        <div class="service-img-container"><div class="techbg1" style="background: url(images/stagehands.jpg);"></div></div>    
+        <h1 class="service-list service-list-stagehands">01<h2 class="service-list-2 service-list-2-stagehands">STAGEHANDS</h2></h1><div id="hover-target-stagehands" class="hover-target"></div>
+            
+            </div>
+        
+        <div id="tech-slice" class="slice" style="overflow:hidden;">
+            <div class="service-img-container"><div class="techbg2" style="background: url(images/techs.jpg);"></div></div>
+            <h1 class="service-list">02<h2 class="service-list-2">Technicians</h2></h1>
+            <div id="hover-target-techs" class="hover-target"></div>
+        </div>
+            
+        <div id="driver-slice" class="slice" style="background-color:green;">
+            <div class="service-img-container"><div class="techbg3" style="background: url(images/drivers2.jpg);"></div></div>
+        <h1 class="service-list">03<h2 class="service-list-2">Drivers</h2></h1>
+            <div id="hover-target-drivers" class="hover-target"></div>
+        </div>
+            
+        <div id="pa-slice" class="slice" style="background-color:purple;">
+            <div class="service-img-container"><div class="techbg4" style="background: url(images/productionassistant2.jpg);"></div></div>
+        <h1 class="service-list">04<h2 class="service-list-2">Production Assistants</h2></h1>
+            <div id="hover-target-pa" class="hover-target"></div>
+        </div>  
+            
+        <div id="runner-slice" class="slice" style="background-color:yellow;">
+            <div class="service-img-container"><div class="techbg5" style="background: url(images/runner.jpg);"></div></div>
+        <h1 class="service-list">05<h2 class="service-list-2">Runners</h2></h1>
+            <div id="hover-target-runners" class="hover-target"></div>
+        </div>    
+            
+        </div>
+        
+        
+        
+        <div id="service-stagehands" class="video-services-container">
+                
+            <div class="service-container">
+                <div class="service-overlay" style="background-color:darkred;">
+                </div>
+                <video class="servicebg" loop autoplay>
+                <source src="assets/videobg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="service-text-container"><h1 class="service-title">01</h1><h2 class="service-title-2">Staging</h2><p class="service-description">Staging services are the future of production. We have you covered.</p>
+            </div>
+        
+        </div>
+        
+        
+        <div id="service-techs" class="video-services-container" >
+        
+            <div class="service-container" background="images/bgimage.jpg">
+                <div class="service-overlay" style="background-color:#2B6CA3; opacity: .2;">
+                </div>
+                <video class="servicebg" loop autoplay background="images/bgimage.jpg">
+                <source src="assets/videobg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="service-text-container"><h1 class="service-title">02</h1><h2 class="service-title-2">Technicians</h2><p class="service-description">Technicians are the future of production. We have you covered.</p>
+            </div>
+        
+        </div>
+        
+    
+        <div id="service-drivers" class="video-services-container">
+        
+            <div class="service-container">
+                <div class="service-overlay" style="background-color:#cc9900;">
+                </div>
+                <video class="servicebg" loop autoplay>
+                <source src="assets/videobg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="service-text-container"><h1 class="service-title">03</h1><h2 class="service-title-2">Drivers</h2><p class="service-description">Drivers are the future of production. We have you covered.</p>
+            </div>
+        
+        </div>
+        
+        
+        <div id="service-pa" class="video-services-container">
+        
+            <div class="service-container">
+                <div class="service-overlay" style="background-color:darkcyan;">
+                </div>
+                <video class="servicebg" loop autoplay>
+                <source src="assets/videobg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="service-text-container"><h1 class="service-title">04</h1><h2 class="service-title-2">Production Assistants</h2><p class="service-description">production assistants are the future of production. We have you covered.</p>
+            </div>
+        
+        </div>
+        
+        
+        <div id="service-runners" class="video-services-container">
+        
+            <div class="service-container">
+                <div class="service-overlay" style="background-color:#862d2d;">
+                </div>
+                <video class="servicebg" loop autoplay>
+                <source src="assets/videobg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="service-text-container"><h1 class="service-title">05</h1><h2 class="service-title-2">Runners</h2><p class="service-description">runners are the future of production. We have you covered.</p>
+            </div>
+        
+        </div>
+
+        
+        
+        
+        
+        
+    </div> 
+  
+<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+    
+    <script>
+        $( "#hover-target-stagehands" ).hover(function(reveal) {$( "#service-stagehands" ).stop().show();}, function(hide) {$( "#service-stagehands" ).stop().hide();});
+    </script>
+    
+    <script>
+        $( "#hover-target-techs" ).hover(function(reveal) {$( "#service-techs" ).stop().show();}, function(hide) {$( "#service-techs" ).stop().hide();});
+    </script>
+    
+    <script>
+        $( "#hover-target-drivers" ).hover(function(reveal) {$( "#service-drivers" ).stop().show();}, function(hide) {$( "#service-drivers" ).stop().hide();});
+    </script>
+    
+
+     <script>
+        $( "#hover-target-pa" ).hover(function(reveal) {$( "#service-pa" ).stop().show();}, function(hide) {$( "#service-pa" ).stop().hide();});
+    </script>
+    
+    <script>
+        $( "#hover-target-runners" ).hover(function(reveal) {$( "#service-runners" ).stop().show();}, function(hide) {$( "#service-runners" ).stop().hide();});
+    </script>
+    
+
+    <script type="text/javascript">
+    jQuery(function(){
+      jQuery("#li-stagehands").click(function () {
+        jQuery("#service-stagehands").toggle("slow");
+          jQuery(".service-list") 
+      });
+    });
+</script>
+    
+    
+    <script type="text/javascript">
+    jQuery(function(){
+      jQuery("#li-techs").click(function () {
+        jQuery("#service-techs").toggle("fast");
+      });
+    });
+</script>
+    
+    <script type="text/javascript">
+    jQuery(function(){
+      jQuery("#li-drivers").click(function () {
+        jQuery("#service-drivers").toggle("fast");
+      });
+    });
+</script>
+    
+    <script type="text/javascript">
+    jQuery(function(){
+      jQuery("#li-pa").click(function () {
+        jQuery("#service-pa").toggle("fast");
+      });
+    });
+</script>
+    
+    <script type="text/javascript">
+    jQuery(function(){
+      jQuery("#li-runners").click(function () {
+        jQuery("#service-runners").toggle("fast");
+      });
+    });
+</script>
+    
+    <script>
+        $( "#hover-target-stagehands" ).hover(function(reveal) {$( ".service-list-2-stagehands" ).stop().animate({opacity: .7,top:"-=200px",});}, function(hide) {$( ".service-list-stagehands,.service-list-2-stagehands" ).stop().animate({opacity: 1,top:"+=200px",});});
+    </script>
+    
+    <script>
+        $( "#hover-target-stagehands" ).hover(function(reveal) {$( ".service-list-stagehands" ).stop().animate({opacity: 0,});}, function(hide) {$( ".service-list-stagehands" ).stop().animate({opacity: 1,});});
+    </script>
+    
+    <script>
+        $( "#hover-target-techs" ).hover(function(reveal) {$( ".service-list-2" ).stop().animate({opacity: .7,top:"-=200px",});}, function(hide) {$( ".service-list,.service-list-2" ).stop().animate({top:"+=200px",});});
+    </script>
+    
+    <script>
+        $( "#hover-target-techs" ).hover(function(reveal) {$( ".service-list" ).stop().animate({opacity: 0,});}, function(hide) {$( ".service-list" ).stop().animate({opacity: 1,});});
+    </script>
+    
+    <script>
+        $( "#hover-target-drivers" ).hover(function(reveal) {$( ".service-list-2" ).stop().animate({opacity: .7,top:"-=200px",});}, function(hide) {$( ".service-list,.service-list-2" ).stop().animate({opacity: 1,top:"+=200px",});});
+    </script>
+    
+    <script>
+        $( "#hover-target-drivers" ).hover(function(reveal) {$( ".service-list" ).stop().animate({opacity: 0,});}, function(hide) {$( ".service-list" ).stop().animate({opacity: 1,});});
+    </script>
+    
+    <script>
+        $( "#hover-target-pa" ).hover(function(reveal) {$( ".service-list-2" ).stop().animate({opacity: .7,top:"-=200px",});}, function(hide) {$( ".service-list,.service-list-2" ).stop().animate({opacity: 1,top:"+=200px",});});
+    </script>
+    
+    <script>
+        $( "#hover-target-pa" ).hover(function(reveal) {$( ".service-list" ).stop().animate({opacity: 0,});}, function(hide) {$( ".service-list" ).stop().animate({opacity: 1,});});
+    </script>
+    
+    <script>
+        $( "#hover-target-runners" ).hover(function(reveal) {$( ".service-list-2" ).stop().animate({opacity: .7,top:"-=200px",});}, function(hide) {$( ".service-list-2" ).stop().animate({opacity: 1, top:"+=200px",});});
+    </script>
+    
+    <script>
+        $( "#hover-target-runners" ).hover(function(reveal) {$( ".service-list" ).stop().animate({opacity: 0,});}, function(hide) {$( ".service-list" ).stop().animate({opacity: 1,});});
+    </script>
+    
+
+    
+    
+</body>
+</html>
